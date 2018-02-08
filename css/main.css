@@ -1,0 +1,38 @@
+/* 
+ * main.css 
+ * Created: 8/2/18
+ * */
+
+#page-wrapper {
+  clear: both;
+  display: block;
+  margin: 0 auto;
+  position: relative;
+  width: 100%;
+  zoom: 1;
+}
+
+/* Scaffolding */
+
+.row {
+  clear: both;
+  display: block;
+  margin: 0 auto;
+  position: relative;
+  width: auto;
+  zoom: 1;
+}
+.row:before,
+.row:after {
+  content: " ";
+  display: table;
+}
+.row:after {
+  clear: both;
+}
+
+.row.two-thirds {
+  width: calc(200%/3);
+}
+
+/* End Scaffolding */
