@@ -10,29 +10,106 @@
 
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
-        <script charset="utf-8" src="https://ucarecdn.com/libs/widget/3.2.2/uploadcare.full.min.js"></script>
+        <script defer charset="utf-8" src="https://ucarecdn.com/libs/widget/3.2.2/uploadcare.full.min.js"></script>
         <script>
             UPLOADCARE_PUBLIC_KEY = '3cc8e5fa95d0c082df7c';
+            UPLOADCARE_LOCALE_TRANSLATIONS = {
+                    buttons: {
+                        choose: {
+                            files: {
+                                one: 'Click aqui para adjuntar tu voucher',
+                                other: 'Click aqui para adjuntar tu voucher'
+                            },
+                        }
+                    }
+                };
         </script>
+        <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
     </head>
     <body>
 
         <div id="page-wrapper">
             <div class="row two-thirds">
-                <div class="form-container">
-                    <form action="https://formspree.io/edepoficial@gmail.com" method="POST">
-                        <input name="nombre" />
-                        <input name="apellido" />
-                        <input name="nacimiento" />
-                        <input name="dni" />
-                        <input name="email" />
-                        <input type="hidden" role="uploadcare-uploader" name="my_file" />
-                        <button type="submit">Enviar</button>
-                    </form>
-                </div>
+                <!-- <h3 class="main-title">Limbo 02.03</h3> -->
+                <div class="two-col">
+                    <div class="img-left">
+                        <img src="bg.jpeg" alt="limbo" />
+                    </div>
+                    <div class="form-container">
+                        <form class="form survey" action="https://formspree.io/edepoficial@gmail.com" method="POST">
+                            <div class="form-field">
+                                <label><i class="far fa-user"></i></label>
+                                <input name="Nombre" placeholder="Nombre" type="text" required />
+                            </div>
+                            <div class="form-field">
+                                <label><i class="far fa-user"></i></label>
+                                <input name="Apellido" placeholder="Apellido" type="text" required />
+                            </div>
+                            <div class="form-field">
+                                <label><i class="fas fa-birthday-cake"></i></label>
+                                <input name="Fecha de Nacimiento" type="date" class="quantumWizTextinputPaperinputInput exportInput" jsname="YPqjbf" autocomplete="off" tabindex="0" value="" data-initial-value="">
+                            </div>
+                            <div class="form-field">
+                                <label><i class="far fa-id-card"></i></label>
+                                <input name="DNI" placeholder="#DNI" type="number" required />
+                            </div>
+                            <div class="form-field">
+                                <label><i class="fas fa-at"></i></label>
+                                <input name="Email" placeholder="Email" type="email" required />
+                            </div>
+                            <div class="select">
+                                <select name="Promotor" required >
+                                    <option value="" disabled selected >Quien te vendio la entrada?</option>
+                                    <option value="Natalia Lock (ADE)">Natalia Lock (ADE)</option>
+                                    <option value="Antonella Dusek (ADE)">Antonella Dusek (ADE)</option>
+                                    <option value="Sebastián Camino (ADE)">Sebastián Camino (ADE)</option>
+                                    <option value="Paola Quintana (ADE)">Paola Quintana (ADE)</option>
+                                    <option value="Gabriel Reinoso (ADE)">Gabriel Reinoso (ADE)</option>
+                                    <option value="Natalia Monsante (ADE)">Natalia Monsante (ADE)</option>
+                                    <option value="Andrea Ballinas (ADE)">Andrea Ballinas (ADE)</option>
+                                    <option value="Maria Fernanda Pardo (ADE)">Maria Fernanda Pardo (ADE)</option>
+                                    <option value="Nicole Lindley (ADE)">Nicole Lindley (ADE)</option>
+                                    <option value="Dergi Kong (ADE)">Dergi Kong (ADE)</option>
+                                    <option value="Carlos Salazar (ADS)">Carlos Salazar (ADS)</option>
+                                    <option value="Ivanka Mulanovich (ADS)">Ivanka Mulanovich (ADS)</option>
+                                    <option value="Rodrigo Jhusey (ADS)">Rodrigo Jhusey (ADS)</option>
+                                    <option value="Oreana Concha (ADS)">Oreana Concha (ADS)</option>
+                                    <option value="Mijael Reyes (ADS)">Mijael Reyes (ADS)</option>
+                                    <option value="Alessandra León (DER)">Alessandra León (DER)</option>
+                                    <option value="Srbo Vladic (DER)">Srbo Vladic (DER)</option>
+                                    <option value="Alessia Cruz (ING)">Alessia Cruz (ING)</option>
+                                    <option value="Fernanda García (ING)">Fernanda García (ING)</option>
+                                    <option value="Micaela Salgado (ING)">Micaela Salgado (ING)</option>
+                                    <option value="Rafaella Belaunde (ING)">Rafaella Belaunde (ING)</option>
+                                    <option value="Sebastián Rosas (ING)">Sebastián Rosas (ING)</option>
+                                    <option value="Flavio Perez (ING)">Flavio Perez (ING)</option>
+                                    <option value="Max García (ING)">Max García (ING)</option>
+                                    <option value="Sebastián D Alfaro (ING)">Sebastián D Alfaro (ING)</option>
+                                    <option value="Maria José Sevillano (ECO)">Maria José Sevillano (ECO)</option>
+                                    <option value="Ricardo Temoche (ECO)">Ricardo Temoche (ECO)</option>
+                                    <option value="Adriana Arce (ECO)">Adriana Arce (ECO)</option>
+                                    <option value="Hernando Tejada (ECO)">Hernando Tejada (ECO)</option>
+                                    <option value="Lucía García-Calderón (PSI)">Lucía García-Calderón (PSI)</option>
+                                    <option value="Paolo Cánepa (PSI)">Paolo Cánepa (PSI)</option>
+                                    <option value="Camila León (PSI)">Camila León (PSI)</option>
+                                    <option value="Alejandra Tasayco (MED)">Alejandra Tasayco (MED)</option>
+                                </select>
+                            </div>
+                            <div class="form-field">
+                                <label><i class="fas fa-upload"></i></label>
+                                <input type="hidden" role="uploadcare-uploader" 
+                                                     name="my_file" required />
+                            </div>
+
+                            <div class="form-field">
+                                <input type="submit" value="Enviar" />
+                            </div>
+                        </form>
+                    </div>
+                </div>    <!-- two-col -->
+
             </div>
         </div>
 
-        <script src="js/main.js"></script>
     </body>
 </html>
