@@ -12,4 +12,5 @@ function HideInput(){
 
 $(function(){
     $('#birthday').datepicker()
+    $('#recojo-u-input input').datepicker()
 })
