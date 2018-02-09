@@ -303,6 +303,7 @@ input[type="submit"] {
   width: 100%;
   padding-left: 1rem;
   background: #3b4148;
+  font-size: 0.8rem;
 }
 .survey input:hover {
   background: #434a52;
@@ -336,6 +337,7 @@ input[type="submit"] {
   background-color: #3b4148;
   border-bottom-left-radius: 0;
   border-top-left-radius: 0;
+  font-size: 0.8rem
 }
 
 .survey input[type="date"]:focus,
@@ -417,7 +419,7 @@ ul li label {
   display: block;
   position: relative;
   font-weight: 300;
-  font-size: 1rem;
+  font-size: 0.8rem;
   z-index: 9;
   cursor: pointer;
   -webkit-transition: all 0.25s linear;
