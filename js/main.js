@@ -14,3 +14,18 @@ $(function(){
     $('#birthday').datepicker()
     $('#recojo-u-input input').datetimepicker()
 })
+
+var $form = $('form.form.survey'),
+    url = 'https://script.google.com/macros/u/0/s/AKfycbyrpzzGxUtD0eQYJGmhOVMBMsjAl-ONMWDN3I907o62J8HrEkY/exec'
+
+$('#submit-form').on('click', function(e) {
+  //e.preventDefault()
+  var jqxhr = $.ajax({
+    url: url,
+    method: "GET",
+    dataType: "json",
+    data: $form.serializeObject()
+  }).success(
+    // do something
+  )
+})
