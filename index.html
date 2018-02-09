@@ -47,19 +47,19 @@
                             </div>
                             <div class="form-field">
                                 <label><i class="fas fa-birthday-cake"></i></label>
-                                <input name="Fecha de Nacimiento" type="date" class="quantumWizTextinputPaperinputInput exportInput" jsname="YPqjbf" autocomplete="off" tabindex="0" value="" data-initial-value="">
+                                <input name="Fecha de Nacimiento (dd-mm-yyyy)" placeholder="Fecha de Nacimiento" type="text" value="" onfocus="(this.type='date')" onblur="if(this.value==''){this.type='text'}">
                             </div>
                             <div class="form-field">
                                 <label><i class="far fa-id-card"></i></label>
-                                <input name="DNI" placeholder="#DNI" type="number" required />
+                                <input name="DNI" placeholder="Numero de Dni" type="number" required />
                             </div>
                             <div class="form-field">
                                 <label><i class="fas fa-at"></i></label>
                                 <input name="Email" placeholder="Email" type="email" required />
                             </div>
-                            <div class="select">
+                            <div class="select" style="margin-bottom: 0;">
                                 <select name="Promotor" required >
-                                    <option value="" disabled selected >Quien te vendio la entrada?</option>
+                                    <option value="" disabled selected >Promotor/a</option>
                                     <option value="Natalia Lock (ADE)">Natalia Lock (ADE)</option>
                                     <option value="Antonella Dusek (ADE)">Antonella Dusek (ADE)</option>
                                     <option value="Sebastián Camino (ADE)">Sebastián Camino (ADE)</option>
@@ -95,6 +95,24 @@
                                     <option value="Alejandra Tasayco (MED)">Alejandra Tasayco (MED)</option>
                                 </select>
                             </div>
+                            <div class="form-field-check">
+                                <ul>
+                                    <li>
+                                        <input id="u" type="radio" name="Recojo" value="De la U" onclick="ShowInput()" />
+                                        <label for="u" >De la U</label>
+                                        <div class="check"></div>
+                                    </li>
+                                    <li>
+                                        <input id="bus" type="radio" name="Recojo" value="En el Bus" onclick="HideInput()" />
+                                        <label for="bus">En el Bus</label>
+                                        <div class="check"></div>
+                                        <div class=""></div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="form-field" id="recojo-u-input">
+                                <input type="text" name="Horario Recojo" placeholder="A que hora quieres recogerlo?" /> 
+                            </div>
                             <div class="form-field">
                                 <label><i class="fas fa-upload"></i></label>
                                 <input type="hidden" role="uploadcare-uploader" 
@@ -110,6 +128,6 @@
 
             </div>
         </div>
-
+        <script defer src="js/main.js"></script>
     </body>
 </html>
