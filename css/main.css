@@ -2,6 +2,9 @@
  * main.css 
  * Created: 8/2/18
  * */
+b{
+  font-weight: bold;
+}
 
 #page-wrapper {
   clear: both;
