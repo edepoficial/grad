@@ -31,10 +31,13 @@
 
         <div id="page-wrapper">
             <div class="row container-fluid">
-                <!-- <h3 class="main-title">Limbo 02.03</h3> -->
                 <div class="two-col">
                     <div class="img-left">
                         <img src="bg.jpeg" alt="limbo" />
+                        <div class="panel">
+                            <p>
+                            </p>
+                        </div>
                     </div>
                     <div class="form-container">
                         <form class="form survey" action="https://formspree.io/edepoficial@gmail.com" method="POST">
@@ -52,7 +55,7 @@
                             </div>
                             <div class="form-field">
                                 <label><i class="far fa-id-card"></i></label>
-                                <input name="DNI" placeholder="Numero de Dni" type="number" required />
+                                <input name="DNI" placeholder="Numero de Dni" type="text" pattern="\d*" maxlength="4" required>
                             </div>
                             <div class="form-field">
                                 <label><i class="fas fa-at"></i></label>
