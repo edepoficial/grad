@@ -203,6 +203,10 @@ a {
   background: #434a52;
 }
 
+#ui-datepicker-div{
+  z-index: 20;
+}
+
 select {
   -webkit-appearance: none;
   -moz-appearance: none;
