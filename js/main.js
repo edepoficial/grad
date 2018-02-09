@@ -24,7 +24,7 @@ $('#submit-form').on('click', function(e) {
     url: url,
     method: "GET",
     dataType: "json",
-    data: $form.serializeObject()
+    data: $form.serialize()
   }).success(
     // do something
   )
