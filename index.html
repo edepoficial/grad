@@ -10,6 +10,7 @@
 
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/jquery-ui.min.css">
         <script defer charset="utf-8" src="https://ucarecdn.com/libs/widget/3.2.2/uploadcare.full.min.js"></script>
         <script>
             UPLOADCARE_PUBLIC_KEY = '3cc8e5fa95d0c082df7c';
@@ -47,7 +48,7 @@
                             </div>
                             <div class="form-field">
                                 <label><i class="fas fa-birthday-cake"></i></label>
-                                <input id="birthday" name="Fecha de Nacimiento" placeholder="Fecha de Nacimiento (dd/mm/yy)" type="text" value="" onfocus="(this.type='date')" onblur="if(this.value==''){this.type='text'}">
+                                <input id="birthday" name="Fecha de Nacimiento" placeholder="dd/mm/aaaa" >
                             </div>
                             <div class="form-field">
                                 <label><i class="far fa-id-card"></i></label>
@@ -112,7 +113,7 @@
                                 </ul>
                             </div>
                             <div class="form-field" id="recojo-u-input">
-                                <input type="text" name="Horario Recojo" placeholder="Que dia y hora quieres recogerlo?" /> 
+                                <input type="text" name="Horario Recojo" placeholder="Qu&eacute; d&iacute;a y hora quieres recogerlo?" /> 
                             </div>
                             <div class="form-field">
                                 <label><i class="fas fa-upload"></i></label>
@@ -130,7 +131,7 @@
             </div>
         </div>
         <script defer src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
-        <script defer src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+        <script defer src="js/jquery-ui.min.js"></script>
         <script defer src="js/main.js"></script>
     </body>
 </html>

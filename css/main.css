@@ -301,6 +301,11 @@ input[type="submit"] {
 }
 .survey input {
   width: 100%;
+  padding-left: 1rem;
+  background: #3b4148;
+}
+.survey input:hover {
+  background: #434a52;
 }
 
 .survey .form-field label,

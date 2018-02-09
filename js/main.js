@@ -11,10 +11,5 @@ function HideInput(){
 }
 
 $(function(){
-    var elem = document.createElement('input')
-    elem.setAttribute('type', 'date')
-
-    if ( elem.type === 'text' ) {
-        $('#birthday').datepicker()
-    }
+    $('#birthday').datepicker()
 })
