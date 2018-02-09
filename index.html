@@ -47,7 +47,7 @@
                             </div>
                             <div class="form-field">
                                 <label><i class="fas fa-birthday-cake"></i></label>
-                                <input name="Fecha de Nacimiento (dd-mm-yyyy)" placeholder="Fecha de Nacimiento" type="text" value="" onfocus="(this.type='date')" onblur="if(this.value==''){this.type='text'}">
+                                <input id="birthday" name="Fecha de Nacimiento" placeholder="Fecha de Nacimiento (dd/mm/yy)" type="text" value="" onfocus="(this.type='date')" onblur="if(this.value==''){this.type='text'}">
                             </div>
                             <div class="form-field">
                                 <label><i class="far fa-id-card"></i></label>
@@ -96,6 +96,7 @@
                                 </select>
                             </div>
                             <div class="form-field-check">
+                                <h4>Recojo...</h4>
                                 <ul>
                                     <li>
                                         <input id="u" type="radio" name="Recojo" value="De la U" onclick="ShowInput()" />
@@ -111,7 +112,7 @@
                                 </ul>
                             </div>
                             <div class="form-field" id="recojo-u-input">
-                                <input type="text" name="Horario Recojo" placeholder="A que hora quieres recogerlo?" /> 
+                                <input type="text" name="Horario Recojo" placeholder="Que dia y hora quieres recogerlo?" /> 
                             </div>
                             <div class="form-field">
                                 <label><i class="fas fa-upload"></i></label>
@@ -128,6 +129,8 @@
 
             </div>
         </div>
+        <script defer src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
+        <script defer src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
         <script defer src="js/main.js"></script>
     </body>
 </html>
