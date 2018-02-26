@@ -1,142 +1,151 @@
 <!doctype html>
-<html class="no-js" lang="">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>Edep Oficial</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <link rel="apple-touch-icon" href="icon.png">
-
-        <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="css/main.css">
-        <link rel="stylesheet" href="css/jquery-ui.min.css">
-        <link rel="stylesheet" href="css/jquery-ui.structure.min.css">
-        <link rel="stylesheet" href="css/jquery-ui.theme.min.css">
-        <script defer charset="utf-8" src="https://ucarecdn.com/libs/widget/3.2.2/uploadcare.full.min.js"></script>
-        <script>
-            UPLOADCARE_PUBLIC_KEY = '3cc8e5fa95d0c082df7c';
-            UPLOADCARE_LOCALE_TRANSLATIONS = {
-                    buttons: {
-                        choose: {
-                            files: {
-                                one: 'Click aqui para adjuntar tu voucher',
-                                other: 'Click aqui para adjuntar tu voucher'
-                            },
-                        }
-                    }
-                };
-        </script>
-        <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
-    </head>
-    <body>
-
-        <div id="page-wrapper">
-            <div class="row container-fluid">
-                <div class="two-col">
-                    <div class="img-left">
-                        <img src="bg.jpeg" alt="limbo" />
-                        <div class="panel">
-                     
-                    <div class="form-container">
-                        <form class="form survey" action="https://formspree.io/edepoficial@gmail.com" method="POST">
-                            <div class="form-field">
-                                <label><i class="far fa-user"></i></label>
-                                <input name="Nombre" placeholder="Nombre" type="text" required />
-                            </div>
-                            <div class="form-field">
-                                <label><i class="far fa-user"></i></label>
-                                <input name="Apellido" placeholder="Apellido" type="text" required />
-                            </div>
-                            <div class="form-field">
-                                <label><i class="fas fa-birthday-cake"></i></label>
-                                <input id="birthday" name="Fecha de Nacimiento" placeholder="dd/mm/aaaa" >
-                            </div>
-                            <div class="form-field">
-                                <label><i class="far fa-id-card"></i></label>
-                                <input name="DNI" placeholder="Numero de Dni" type="text" pattern="\d*" maxlength="8" required>
-                            </div>
-                            <div class="form-field">
-                                <label><i class="fas fa-at"></i></label>
-                                <input name="Email" placeholder="Email" type="email" required />
-                            </div>
-                            <div class="select" style="margin-bottom: 0;">
-                                <select name="Promotor" required >
-                                    <option value="" disabled selected >Promotor/a</option>
-                                    <option value="Natalia Lock (ADE)">Natalia Lock (ADE)</option>
-                                    <option value="Sebastián Camino (ADE)">Sebastián Camino (ADE)</option>
-                                    <option value="Antonella Dusek (ADE)">Antonella Dusek (ADE)</option>
-                                    <option value="Natalia Monsante (ADE)">Natalia Monsante (ADE)</option>
-                                    <option value="Thais Woolcott (ADE)">Thais Woolcott (ADE)</option>
-                                    <option value="Nicole Lindley (ADE)">Nicole Lindley (ADE)</option>
-                                    <option value="Alexis Filippakopoulos (ADE)">Alexis Filippakopoulos (ADE)</option>
-                                    <option value="Dergi Kong (ADE)">Dergi Kong (ADE)</option>
-                                    <option value="Andrea Ballinas (ADS)">Andrea Ballinas (ADS)</option>
-                                    <option value="Ivanka Mulanovich (ADS)">Ivanka Mulanovich (ADS)</option>
-                                    <option value="Oreana Concha (ADS)">Oreana Concha (ADS)</option>
-                                    <option value="Rodrigo Castro (ADS)">Rodrigo Castro (ADS)</option>
-                                    <option value="Mijael Reyes (ADS)">Mijael Reyes (ADS)</option>
-                                    <option value="Alessandra León (DER)">Alessandra León (DER)</option>
-                                    <option value="Srbo Vladic (DER)">Srbo Vladic (DER)</option>
-                                    <option value="Alessia Cruz (ING)">Alessia Cruz (ING)</option>
-                                    <option value="Fernanda García (ING)">Fernanda García (ING)</option>
-                                    <option value="Micaela Salgado (ING)">Micaela Salgado (ING)</option>
-                                    <option value="Rafaella Belaunde (ING)">Rafaella Belaunde (ING)</option>
-                                    <option value="Sebastián Rosas (ING)">Sebastián Rosas (ING)</option>
-                                    <option value="Flavio Perez (ING)">Flavio Perez (ING)</option>
-                                    <option value="Max García (ING)">Max García (ING)</option>
-                                    <option value="Sebastián D Alfaro (ING)">Sebastián D Alfaro (ING)</option>
-                                    <option value="Maria José Sevillano (ECO)">Maria José Sevillano (ECO)</option>
-                                    <option value="Ricardo Temoche (ECO)">Ricardo Temoche (ECO)</option>
-                                    <option value="Adriana Arce (ECO)">Adriana Arce (ECO)</option>
-                                    <option value="Hernando Tejada (ECO)">Hernando Tejada (ECO)</option>
-                                    <option value="Lucía García-Calderón (PSI)">Lucía García-Calderón (PSI)</option>
-                                    <option value="Paolo Cánepa (PSI)">Paolo Cánepa (PSI)</option>
-                                    <option value="Camila León (PSI)">Camila León (PSI)</option>
-                                    <option value="Alejandra Tasayco (MED)">Alejandra Tasayco (MED)</option>
-                                </select>
-                            </div>
-                            <div class="form-field-check">
-                                <h4>Recojo...</h4>
-                                <ul>
-                                    <li>
-                                        <input id="u" type="radio" name="Recojo" value="De la U" onclick="ShowInput()" />
-                                        <label for="u" >De la U</label>
-                                        <div class="check"></div>
-                                    </li>
-                                    <li>
-                                        <input id="bus" type="radio" name="Recojo" value="En el Bus" onclick="HideInput()" />
-                                        <label for="bus">En el Bus</label>
-                                        <div class="check"></div>
-                                        <div class=""></div>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="form-field" id="recojo-u-input">
-                                <input type="text" name="Horario Recojo" placeholder="Qu&eacute; d&iacute;a y hora quieres recogerlo?" /> 
-                            </div>
-                            <div class="form-field">
-                                <label><i class="fas fa-upload"></i></label>
-                                <input type="hidden" role="uploadcare-uploader" 
-                                                     name="my_file" required />
-                            </div>
-
-                            <div class="form-field">
-                                <input id="submit-form" type="submit" value="Enviar" />
-                            </div>
-                        </form>
-                    </div> -->
-                
-                </div>    <!-- two-col -->
-
-            </div>
-        </div>
-        
-        <script defer src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
-        <script defer src="js/jquery-ui.min.js"></script>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-ui-timepicker-addon/1.6.3/jquery-ui-timepicker-addon.min.css">
-        <script defer src="https://cdnjs.cloudflare.com/ajax/libs/jquery-ui-timepicker-addon/1.6.3/jquery-ui-timepicker-addon.min.js"></script>
-        <script defer src="js/jquery-ui-sliderAccess.js"></script>
-        <script defer src="js/main.js"></script>
-    </body>
-</html>
+ <html class="no-js" lang="">
+     <head>
+         <meta charset="utf-8">
+         <meta http-equiv="x-ua-compatible" content="ie=edge">
+         <title>Edep Oficial</title>
+         <meta name="description" content="">
+         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+         <link rel="apple-touch-icon" href="icon.png">
+ 
+         <link rel="stylesheet" href="css/normalize.css">
+         <link rel="stylesheet" href="css/main.css">
+         <link rel="stylesheet" href="css/jquery-ui.min.css">
+         <link rel="stylesheet" href="css/jquery-ui.structure.min.css">
+         <link rel="stylesheet" href="css/jquery-ui.theme.min.css">
+         <script defer charset="utf-8" src="https://ucarecdn.com/libs/widget/3.2.2/uploadcare.full.min.js"></script>
+         <script>
+             UPLOADCARE_PUBLIC_KEY = '3cc8e5fa95d0c082df7c';
+             UPLOADCARE_LOCALE_TRANSLATIONS = {
+                     buttons: {
+                         choose: {
+                             files: {
+                                 one: 'Click aqui para adjuntar tu voucher',
+                                 other: 'Click aqui para adjuntar tu voucher'
+                             },
+                         }
+                     }
+                 };
+         </script>
+         <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+     </head>
+     <body>
+ 
+         <div id="page-wrapper">
+             <div class="row container-fluid">
+                 <div class="two-col">
+                     <div class="img-left">
+                         <img src="bg.jpeg" alt="limbo" />
+                         <div class="panel">
+                             <p style="color: #fff;">
+                                 ¡Ya puedes adquirir tu entrada para el evento de este 2 de Marzo, Limbo by Edep, con esta opción de pago para facilitar la coordinación con tu promotor!<br><br>
+                                 <b>N° de cuenta:</b> 193-39961641-0-92 <br>
+                                 <b>N° de cta. interbancaria:</b> 002-19313996164109219 <br>
+                                 Por favor, SOLO transferencias, depósitos en agencias o cajeros automáticos <br>
+                                 Al enviar este formulario, te llegará un correo de confirmación por tu entrada. <br><br>
+                                 ¡Nos vemos en <b>Limbo!</b>
+                             </p>
+                          </div>
+                      </div>
+                      <div class="form-container">
+ -                        <form class="form survey" action="https://formspree.io/edepoficial@gmail.com">
+ +                        <form class="form survey" action="https://formspree.io/edepoficial@gmail.com" method="POST">
+                              <div class="form-field">
+                                  <label><i class="far fa-user"></i></label>
+                                  <input name="Nombre" placeholder="Nombre" type="text" required />
+                             </div>
+                             <div class="form-field">
+                                 <label><i class="far fa-user"></i></label>
+                                 <input name="Apellido" placeholder="Apellido" type="text" required />
+                             </div>
+                             <div class="form-field">
+                                 <label><i class="fas fa-birthday-cake"></i></label>
+                                 <input id="birthday" name="Fecha de Nacimiento" placeholder="dd/mm/aaaa" >
+                             </div>
+                             <div class="form-field">
+                                 <label><i class="far fa-id-card"></i></label>
+                                 <input name="DNI" placeholder="Numero de Dni" type="text" pattern="\d*" maxlength="8" required>
+                             </div>
+                             <div class="form-field">
+                                 <label><i class="fas fa-at"></i></label>
+                                 <input name="Email" placeholder="Email" type="email" required />
+                             </div>
+                             <div class="select" style="margin-bottom: 0;">
+                                 <select name="Promotor" required >
+                                     <option value="" disabled selected >Promotor/a</option>
+                                     <option value="Natalia Lock (ADE)">Natalia Lock (ADE)</option>
+                                     <option value="Sebastián Camino (ADE)">Sebastián Camino (ADE)</option>
+                                     <option value="Antonella Dusek (ADE)">Antonella Dusek (ADE)</option>
+                                     <option value="Natalia Monsante (ADE)">Natalia Monsante (ADE)</option>
+                                     <option value="Thais Woolcott (ADE)">Thais Woolcott (ADE)</option>
+                                     <option value="Nicole Lindley (ADE)">Nicole Lindley (ADE)</option>
+                                     <option value="Alexis Filippakopoulos (ADE)">Alexis Filippakopoulos (ADE)</option>
+                                     <option value="Dergi Kong (ADE)">Dergi Kong (ADE)</option>
+                                     <option value="Andrea Ballinas (ADS)">Andrea Ballinas (ADS)</option>
+                                     <option value="Ivanka Mulanovich (ADS)">Ivanka Mulanovich (ADS)</option>
+                                     <option value="Oreana Concha (ADS)">Oreana Concha (ADS)</option>
+                                     <option value="Rodrigo Castro (ADS)">Rodrigo Castro (ADS)</option>
+                                     <option value="Mijael Reyes (ADS)">Mijael Reyes (ADS)</option>
+                                     <option value="Alessandra León (DER)">Alessandra León (DER)</option>
+                                     <option value="Srbo Vladic (DER)">Srbo Vladic (DER)</option>
+                                     <option value="Alessia Cruz (ING)">Alessia Cruz (ING)</option>
+                                     <option value="Fernanda García (ING)">Fernanda García (ING)</option>
+                                     <option value="Micaela Salgado (ING)">Micaela Salgado (ING)</option>
+                                     <option value="Rafaella Belaunde (ING)">Rafaella Belaunde (ING)</option>
+                                     <option value="Sebastián Rosas (ING)">Sebastián Rosas (ING)</option>
+                                     <option value="Flavio Perez (ING)">Flavio Perez (ING)</option>
+                                     <option value="Max García (ING)">Max García (ING)</option>
+                                     <option value="Sebastián D Alfaro (ING)">Sebastián D Alfaro (ING)</option>
+                                     <option value="Maria José Sevillano (ECO)">Maria José Sevillano (ECO)</option>
+                                     <option value="Ricardo Temoche (ECO)">Ricardo Temoche (ECO)</option>
+                                     <option value="Adriana Arce (ECO)">Adriana Arce (ECO)</option>
+                                     <option value="Hernando Tejada (ECO)">Hernando Tejada (ECO)</option>
+                                     <option value="Lucía García-Calderón (PSI)">Lucía García-Calderón (PSI)</option>
+                                     <option value="Paolo Cánepa (PSI)">Paolo Cánepa (PSI)</option>
+                                     <option value="Camila León (PSI)">Camila León (PSI)</option>
+                                     <option value="Alejandra Tasayco (MED)">Alejandra Tasayco (MED)</option>
+                                 </select>
+                             </div>
+                             <div class="form-field-check">
+                                 <h4>Recojo...</h4>
+                                 <ul>
+                                     <li>
+                                         <input id="u" type="radio" name="Recojo" value="De la U" onclick="ShowInput()" />
+                                         <label for="u" >De la U</label>
+                                         <div class="check"></div>
+                                     </li>
+                                     <li>
+                                         <input id="bus" type="radio" name="Recojo" value="En el Bus" onclick="HideInput()" />
+                                         <label for="bus">En el Bus</label>
+                                         <div class="check"></div>
+                                         <div class=""></div>
+                                     </li>
+                                 </ul>
+                             </div>
+                             <div class="form-field" id="recojo-u-input">
+                                 <input type="text" name="Horario Recojo" placeholder="Qu&eacute; d&iacute;a y hora quieres recogerlo?" /> 
+                             </div>
+                             <div class="form-field">
+                                 <label><i class="fas fa-upload"></i></label>
+                                 <input type="hidden" role="uploadcare-uploader" 
+                                                      name="my_file" required />
+                             </div>
+ 
+                             <div class="form-field">
+                                 <input id="submit-form" type="submit" value="Enviar" />
+                             </div>
+                         </form>
+                     </div>
+                 </div>    <!-- two-col -->
+ 
+             </div>
+         </div>
+         
+         <script defer src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+         <script defer src="js/jquery-ui.min.js"></script>
+         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-ui-timepicker-addon/1.6.3/jquery-ui-timepicker-addon.min.css">
+         <script defer src="https://cdnjs.cloudflare.com/ajax/libs/jquery-ui-timepicker-addon/1.6.3/jquery-ui-timepicker-addon.min.js"></script>
+         <script defer src="js/jquery-ui-sliderAccess.js"></script>
+         <script defer src="js/main.js"></script>
+     </body>
+ </html>
